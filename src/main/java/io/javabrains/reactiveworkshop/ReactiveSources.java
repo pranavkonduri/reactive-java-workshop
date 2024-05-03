@@ -21,7 +21,8 @@ public class ReactiveSources {
     public static Flux<Integer> intNumbersFlux() {
         return Flux
                 .range(1, 10)
-                .delayElements(Duration.ofSeconds(1));
+                .delayElements(Duration.ofSeconds(1))
+                ;
     }
 
     public static Flux<Integer> intNumbersFluxWithException() {

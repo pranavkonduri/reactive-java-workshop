@@ -47,7 +47,6 @@ public class Exercise1 {
                 .flatMap((id -> StreamSources.userStream().filter(user -> user.getId() == id)))
                 .map(user -> user.getFirstName())
                 .forEach(userName -> System.out.print(userName + "\t"));
-
     }
 
 }
